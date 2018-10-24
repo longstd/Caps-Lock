@@ -28,13 +28,13 @@ namespace ABC
         private void timer1_Tick(object sender, EventArgs e)
         {
            
-            if (IsKeyLocked(Keys.CapsLock))//如果键盘是大写，则显示“A”
+            if (IsKeyLocked(Keys.CapsLock))//判断键盘大小写，如果键盘是大写，则显示“A”
             {
                 label1.Text = "A";
             }
             else                           //小写则为空白，不显示任何东西
                 label1.Text  = "";
-            if (IsKeyLocked(Keys.NumLock))//如果数字键盘锁住，则显示“123”
+            if (IsKeyLocked(Keys.NumLock))//判断数字键盘是否锁住，如果数字键盘锁住，则显示“123”
             {
                 label2.Text = "123";
                     }
